@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizando links</title>
+    <style>
+        body{
+            background-color: orange;
+        }
+        a{
+            color:red;
+        }
+        a:visited{
+            text-decoration: overline;
+            font-weight: bolder;
+            color: yellowgreen;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+        a:active{
+            color: yellow;
+        }
+        .especial::after{
+            content: '[link]' ;
+            text-decoration: normal;
+            font-style: normal;
+            color: whitesmoke;
+        }
+        .especial::before{
+            content: '[Link]';
+            color: palegoldenrod;
+        }
+        button:hover{
+            background-color:aqua;
+        }
+        button:active{
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+    <li><a href="https://github.com/">GitHub</a></li>
+    <li><a href="https://www.youtube.com/" class="especial">Youtube</a></li>
+    <li><a href="https://br.linkedin.com/">Linkdin</a></li>
+    </ul>
+    <button>Like</button>
+</body>
+</html>

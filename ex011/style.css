@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/*
+    id=# no css
+    class= . no css
+*/
+body{
+    background-color: rgb(157, 214, 100);
+    font-family: sans-serif;
+}
+h1{
+    color: rgb(89, 179, 0);
+}
+h2{
+    color: rgb(70, 114, 26);
+}
+.principal{
+    text-align: center;
+}
+.basico{
+    color: red;
+}
+
+.intermediario{
+    color: yellow;
+}
+.avançado{
+    color: green;
+}
+.destaque{
+    background-color: salmon;
+}
